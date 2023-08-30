@@ -70,7 +70,7 @@ console.log(endYear1); */
 
 
 
-//MAP -- to get one specific attribute
+/* //MAP -- to get one specific attribute
 //to create array of company names
 const companyName = companies.map(function(companies){
     return companies.name
@@ -79,4 +79,28 @@ console.log(companyName);
 
 
 const testMap = companies.map(companies => `${companies.name} [${companies.start} - ${companies.end}]`);
-console.log(testMap);
+console.log(testMap); */
+
+//SORT
+const sortedCompanies = companies.sort(function(c1, c2){
+    if(c1.start > c2.start){
+        return 1;
+    }else{
+        return -1;
+    }
+});
+
+console.log(sortedCompanies);
+
+const sortCompanies = companies.sort((a, b) => (a.start > b.start ? 1 : -1));
+console.log(sortCompanies);
+
+
+const sortAge = ages.sort();
+console.log(sortAge);
+
+const sortAges = ages.sort((a, b) => a - b);
+console.log(sortAges);
+
+const sort_Ages = ages.sort((a, b) => b - a);
+console.log(sortAges);
