@@ -81,7 +81,7 @@ console.log(companyName);
 const testMap = companies.map(companies => `${companies.name} [${companies.start} - ${companies.end}]`);
 console.log(testMap); */
 
-//SORT
+/* //SORT
 const sortedCompanies = companies.sort(function(c1, c2){
     if(c1.start > c2.start){
         return 1;
@@ -103,4 +103,26 @@ const sortAges = ages.sort((a, b) => a - b);
 console.log(sortAges);
 
 const sort_Ages = ages.sort((a, b) => b - a);
-console.log(sortAges);
+console.log(sortAges); */
+
+
+
+//REDUCE
+
+let ageSum = 0;
+for(let i = 0; i< ages.length; i++){
+    ageSum += ages[i];
+
+}
+console.log(ageSum);
+
+
+const age_Sum = ages.reduce(function(total, age){
+
+    return total + ages;
+}, 0);
+console.log(age_Sum);
+
+
+const sumAge = ages.reduce((total, age) => total + age, 0);
+console.log(sumAge);
