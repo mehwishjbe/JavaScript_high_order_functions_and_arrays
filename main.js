@@ -23,7 +23,7 @@ companies.forEach(function(companies){
 }); */
 
 
-//FILTER
+/* //FILTER
 let canDrink = [];
 for(let i=0; i<ages.length; i++){
     if(ages[i] <= 21){
@@ -37,27 +37,24 @@ const canDrink1 = ages.filter(function(age){
         return true;
     }
 });
-console.log(canDrink1);
+console.log(canDrink1); */
 /* 
 let retail = [];
 for(let i = 0; i<companies.length; i++){
     if (companies[i].) {
         retail.push(companies[i]);
-        
     }
 }
-
 console.log(retail); */
 
 
-const retail = companies.filter(function(companies){
+/* const retail = companies.filter(function(companies){
 
     if(companies.category === 'Retail'){
         return true;
     }
 });
-console.log(retail);
-
+console.log(retail); */
 
 
 /* let endYear = companies.filter(function(companies){
@@ -68,5 +65,18 @@ console.log(retail);
 });
 console.log(endYear); */
 
-const endYear1 = companies.filter(companies => companies.end === 2003 );
-console.log(endYear1);
+/* const endYear1 = companies.filter(companies => companies.end === 2003 );
+console.log(endYear1); */
+
+
+
+//MAP -- to get one specific attribute
+//to create array of company names
+const companyName = companies.map(function(companies){
+    return companies.name
+});
+console.log(companyName);
+
+
+const testMap = companies.map(companies => `${companies.name} [${companies.start} - ${companies.end}]`);
+console.log(testMap);
