@@ -237,7 +237,7 @@ const users = [
 /* const output = users.map((x) => x.firstName + " " + x.lastName);
 console.log(output); */
 
-const output = users.reduce(function (acc, curr){
+/* const output = users.reduce(function (acc, curr){
     if(acc[curr.age]){
         acc[curr.age] = ++acc[curr.age];
     }else{
@@ -246,6 +246,14 @@ const output = users.reduce(function (acc, curr){
     return acc;
 }, {});
 
-console.log(output);
+console.log(output); */
 
 
+const output = users.reduce(function (acc, curr){
+    if(curr.age>27){
+        console.log(curr.firstName);
+    }else{
+        return null; 
+    }
+    return acc;
+}, {});
