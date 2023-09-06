@@ -213,7 +213,7 @@ console.log(output); */
 
 console.log(output1); */
 
-const arr1 = [0,1,2,3,4,5,6,7,8,9,10,90];
+/* const arr1 = [0,1,2,3,4,5,6,7,8,9,10,90];
 
 const output_ =  arr1.reduce(function (acc, curr){
     let max = 0;
@@ -223,4 +223,18 @@ const output_ =  arr1.reduce(function (acc, curr){
     return max;
 },0);
 
-console.log(output_);   
+console.log(output_);    */
+
+const users = [
+    {firstName:"Wes", lastName:"Gibbins", age:28},
+    {firstName:"Michaela", lastName:"Pratt", age:28},
+    {firstName:"Conner", lastName:"Walch", age:27},
+    {firstName:"Laurel", lastName:"Castillo", age:25},
+    {firstName:"Asher", lastName:"Millstone", age:27},
+]
+
+//to get the names from all keys
+const output = users.map((x) => x.firstName + " " + x.lastName);
+console.log(output);
+
+
