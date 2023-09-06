@@ -185,9 +185,9 @@ console.log(show); */
 
 
 // Reduce()
-const arr1 = [0,1,2,3,4,5,6,7,8,9,10];
+// const arr1 = [0,1,2,3,4,5,6,7,8,9,10,90];
 
-function findSum(arr1){
+/* function findSum(arr1){
     
     let sum = 0;
     for(let i=0; i<arr1.length; i++) {
@@ -203,7 +203,7 @@ const output = arr1.reduce(function (acc, curr){
     return acc;
 },0); 
 
-console.log(output);
+console.log(output); */
 
 
 /* const output1 = arr1.reduce((acc, curr) => {
@@ -212,3 +212,15 @@ console.log(output);
 }, 0);
 
 console.log(output1); */
+
+const arr1 = [0,1,2,3,4,5,6,7,8,9,10,90];
+
+const output_ =  arr1.reduce(function (acc, curr){
+    let max = 0;
+    if(curr > max){
+        max = curr;
+    }
+    return max;
+},0);
+
+console.log(output_);   
