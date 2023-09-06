@@ -129,7 +129,7 @@ console.log(sumAge); */
 
 // Map 
 
-const arr1 = [5,3,6,8,4];
+/* const arr1 = [5,3,6,8,4];
 const arr2 = [12,56,34];
 
 function double(x){
@@ -160,4 +160,25 @@ let result3 = arr2.map(binary);
 console.log(result);
 console.log(result1);
 console.log(result2);
-console.log(result3);
+console.log(result3); */
+
+//Filter
+
+const arr1 = [0,1,2,3,4,5,6,7,8,9,10];
+
+let odd = (x) => x % 2 != 0;
+
+function even(x){
+    return x % 2 === 0;
+}
+
+let greater = (x) => x > 9;
+
+const output = arr1.filter(even);
+console.log(output);
+
+const result = arr1.filter(odd);
+console.log(result);
+
+const show = arr1.filter(greater);
+console.log(show);
