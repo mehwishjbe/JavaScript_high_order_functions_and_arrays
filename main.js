@@ -234,7 +234,18 @@ const users = [
 ]
 
 //to get the names from all keys
-const output = users.map((x) => x.firstName + " " + x.lastName);
+/* const output = users.map((x) => x.firstName + " " + x.lastName);
+console.log(output); */
+
+const output = users.reduce(function (acc, curr){
+    if(acc[curr.age]){
+        acc[curr.age] = ++acc[curr.age];
+    }else{
+        acc[curr.age] = 1;
+    }
+    return acc;
+}, {});
+
 console.log(output);
 
 
