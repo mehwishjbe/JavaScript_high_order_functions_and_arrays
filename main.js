@@ -114,18 +114,18 @@ for(let i = 0; i< ages.length; i++){
     ageSum += ages[i];
 
 }
-console.log(ageSum);
+console.log(ageSum); */
 
 
-const age_Sum = ages.reduce(function(total, age){
+/* const age_Sum = ages.reduce(function(total, age){
 
     return total + ages;
 }, 0);
-console.log(age_Sum);
+console.log(age_Sum); */
 
 
-const sumAge = ages.reduce((total, age) => total + age, 0);
-console.log(sumAge); */
+/* const age_Sum = ages.reduce((total, age) => total + age, 0);
+console.log(age_Sum);  */
 
 // Map 
 
@@ -164,7 +164,7 @@ console.log(result3); */
 
 //Filter
 
-const arr1 = [0,1,2,3,4,5,6,7,8,9,10];
+/* const arr1 = [0,1,2,3,4,5,6,7,8,9,10];
 
 let odd = (x) => x % 2 != 0;
 
@@ -181,4 +181,34 @@ const result = arr1.filter(odd);
 console.log(result);
 
 const show = arr1.filter(greater);
-console.log(show);
+console.log(show); */
+
+
+// Reduce()
+const arr1 = [0,1,2,3,4,5,6,7,8,9,10];
+
+function findSum(arr1){
+    
+    let sum = 0;
+    for(let i=0; i<arr1.length; i++) {
+         sum = sum + arr1[i];
+    }
+    return sum;
+}
+console.log(findSum(arr1));
+
+
+const output = arr1.reduce(function (acc, curr){
+    acc = acc + curr;
+    return acc;
+},0); 
+
+console.log(output);
+
+
+/* const output1 = arr1.reduce((acc, curr) => {
+    acc = acc + curr;
+    return acc;
+}, 0);
+
+console.log(output1); */
