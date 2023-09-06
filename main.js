@@ -109,7 +109,7 @@ console.log(sortAges); */
 
 //REDUCE
 
-let ageSum = 0;
+/* let ageSum = 0;
 for(let i = 0; i< ages.length; i++){
     ageSum += ages[i];
 
@@ -125,4 +125,39 @@ console.log(age_Sum);
 
 
 const sumAge = ages.reduce((total, age) => total + age, 0);
-console.log(sumAge);
+console.log(sumAge); */
+
+// Map 
+
+const arr1 = [5,3,6,8,4];
+const arr2 = [12,56,34];
+
+function double(x){
+    return x * 2
+}
+
+function triple(y){
+    return y * 3;
+}
+
+function binary(z){
+    let store = ' ';
+    for(i=0; i<z; i++){
+        if(i%2 === 0){
+            store += '1';
+        }else{
+            store += '0';
+        }
+    }
+    return store;
+}
+
+let result = arr1.map(double);
+let result1 = arr1.map(triple);
+let result2 = arr1.map(binary);
+let result3 = arr2.map(binary);
+
+console.log(result);
+console.log(result1);
+console.log(result2);
+console.log(result3);
